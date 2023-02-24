@@ -1,0 +1,36 @@
+@import './colors.css';
+
+.app{
+    background-image: url(../Assets/cat.jpg);
+    display: flex;
+    overflow-x: hidden;
+    height: 300vh;
+}
+
+.App-body{
+    background-color: var(--opacity);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App-body-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 70px;
+    width: 100vw;
+    height: 85vh;
+}
+
+.cardContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    width: 40vw;
+}
+
+.imgContainer{
+    width: 40vw;
+}

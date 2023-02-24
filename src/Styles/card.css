@@ -1,0 +1,46 @@
+@import './colors.css';
+
+.card {
+    -moz-box-shadow: 0px 7px 21px -8px rgb(97, 97, 97);
+    -webkit-box-shadow: 0px 7px 21px -8px rgb(82, 82, 82);
+    background-color: var(--whiteOpacity);
+    border-bottom: 3px solid var(--orange);
+    box-shadow: 0px 7px 21px -8px rgb(97, 97, 97);
+    height: auto;
+    padding: 5px;
+    width: 80%;
+}
+
+.card hr {
+    background-color: var(--orange);
+    height: 0.5px; 
+    border: 0;
+    margin: 0px 5px
+}
+
+.cardHeader{
+    padding: 5px
+}
+
+.cardHeader span {
+    color: var(--orange);
+    font-size: 25px;
+}
+
+.bodyHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyHeader div{
+    display: flex;
+    align-items: center;
+
+}
+
+.bodyHeader span{
+    color: var(--black);
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
