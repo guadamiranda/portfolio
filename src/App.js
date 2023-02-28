@@ -31,7 +31,6 @@ export const App = () => {
       <div className='App-body'>
 
         <section ref={refHome} id={menuRight[0].opName} className="App-body-home">
-
           <div className='cardContainer'>
             <Card cardInformation={cardInformation[0]}/>
             <Card cardInformation={cardInformation[1]}/>
@@ -39,19 +38,22 @@ export const App = () => {
 
           <div className='imgContainer'>
           </div>
-
         </section>
 
-        <span><TitleSection titles={titles[0]}/></span>
-
         <section ref={refSkills} id={menuRight[1].opName} className="App-body-skills">
+          <span><TitleSection titles={titles[0]}/></span>
+          <br/>
           <span><SkillCard/></span>
         </section>
 
         <section ref={refProjects} id={menuRight[2].opName} className="App-body-projects">
+          <span><TitleSection titles={titles[1]}/></span>
+          <span><SkillCard/></span>
         </section>
 
         <section ref={refContact} id={menuRight[3].opName} className="App-body-contact">
+          <span><TitleSection titles={titles[2]}/></span>
+          <span><SkillCard/></span>
         </section>
 
       </div>

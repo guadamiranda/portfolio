@@ -1,0 +1,35 @@
+
+.titleSkillContainer{
+    width: 20vw;
+    height: 25vh;
+    background-color: var(--whiteOpacity);
+    box-shadow: 0px 7px 21px -8px rgb(97, 97, 97);
+    -moz-box-shadow: 0px 7px 21px -8px rgb(97, 97, 97);
+    -webkit-box-shadow: 0px 7px 21px -8px rgb(82, 82, 82);
+}
+
+.titleSkillCard{
+    width: 100%;
+    height: 65%;
+}
+
+.skillLevelCard{
+    background-color: var(--brown);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 35%;
+}
+
+.titleSkillCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleSkillCard img{
+    height: 90%;
+    width: 40%;
+}
