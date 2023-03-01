@@ -1,0 +1,17 @@
+/*
+<div className='skillCard'>
+            {skills.map((skill) => 
+                <div className='titleSkillContainer'>
+                    <VscCircleFilled className='circleFixed'/>
+                    <div className='titleSkillCard'>
+                        <img src={skill.img}></img>
+                    </div>
+
+                    <div className='skillLevelCard'>
+                        <div><AiFillCaretRight className='iconArrowTitle'/><span>{skill.name}</span><AiFillCaretLeft className='iconArrowTitle'/></div>
+                        <div><span><Circles levels={skill.level}></Circles></span></div>
+                    </div>
+                </div>
+                )}
+        </div>
+/*
