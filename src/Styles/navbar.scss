@@ -1,5 +1,21 @@
 
 .navbar{
-    background-color: black;
+    background-color: rgb(170, 170, 170);
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+
+    &__left-content, &__right-content, &__center-content{
+        align-items: center;
+        display: flex;  
+    }
+
+    &__left-content, &__right-content{
+        font-size: 30px; 
+        padding: 4px 5px
+    }
+
+    &__center-content div{
+        padding: 0px 50px;
+    }
 }
