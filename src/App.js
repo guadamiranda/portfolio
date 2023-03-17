@@ -2,6 +2,7 @@ import './App.scss';
 import { Navbar } from './Components/Navbar/Navbar';
 import { Title } from './Components/Title/Title';
 import { Presentation } from './Components/Presentation/Presentation';
+import { SkillsCard } from './Components/SkillsCard/SkillsCard';
 import { useRef } from 'react';
 
 export const App = () => {
@@ -31,6 +32,9 @@ export const App = () => {
         <div ref={skillsRef} className='skill-section'>
           <div className='opacityNoCenter'>
             <div className='title-div'><Title title={<span><b>S</b>KILLS</span>}/></div>
+            <div className='skill-section__center'>
+              <SkillsCard/>
+            </div>
           </div>  
         </div>
 
