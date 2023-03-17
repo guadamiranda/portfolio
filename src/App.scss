@@ -1,0 +1,60 @@
+
+.home-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Assets/sakura2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutMe-section{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.skill-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Assets/night2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects-section{
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+}
+
+.contact-section{
+    width: 100%;
+    height: 100vh;
+    background-color:cornflowerblue;
+}
+
+.title-div{
+    display: flex;
+    justify-content: center;
+
+    b {
+        color: var(--pinky)
+    }
+}
+
+.opacity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(356deg, rgba(46, 46, 46, 0.8) 0%, rgba(247, 143, 163,0.5) 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.opacityNoCenter{
+    background: rgb(255,255,255);
+    background: linear-gradient(356deg, rgba(46, 46, 46, 0.8) 0%, rgba(247, 143, 163,0.5) 100%);
+    width: 100%;
+    height: 100vh;
+}
