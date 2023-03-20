@@ -10,7 +10,7 @@ export const Contact = () =>{
             <hr></hr>
             <div><FiMail className='contact__icon-contact'/> <span>guadalupe.miranda997@gmail.com</span></div>
             <hr></hr>
-            <div><FaLinkedinIn className='contact__icon-contact'/> <a href='https://www.linkedin.com/in/guadalupe-miranda-7b3599267/'>LinkedIn's profile</a></div>
+            <div><FaLinkedinIn className='contact__icon-contact'/> <a href='https://www.linkedin.com/in/guadalupe-miranda-7b3599267/'  target="_blank" rel="noopener noreferrer">LinkedIn's profile</a></div>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import '../../Styles/navbar.scss'
 import { IoLogoOctocat } from 'react-icons/io';
-import { FaLinkedin, FaFacebookSquare} from 'react-icons/fa'
+import { FaLinkedin, FaFacebookSquare, FaGithubSquare} from 'react-icons/fa'
 
 export const Navbar = (props) => {
 
@@ -35,7 +35,7 @@ export const Navbar = (props) => {
                     <div onClick={() => scroll('projects')}><span>P</span>rojects</div>
                     <div onClick={() => scroll('contact')}><span>C</span>ontact</div> 
                 </div>
-                <div id='navbar_right-content' className='navbar__right-content'><FaFacebookSquare className='facebook-icon'/><FaLinkedin className='linkedin-icon'/></div>
+                <div id='navbar_right-content' className='navbar__right-content'><FaFacebookSquare className='facebook-icon'/><FaLinkedin className='linkedin-icon'/><FaGithubSquare className='facebook-icon'/></div>
         </div>
     )
 }

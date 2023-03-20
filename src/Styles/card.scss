@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white);
+    text-decoration: none;
     
 
     &__opacity{
@@ -40,3 +41,4 @@
         transition: 0.5s;
     }
 }
+
