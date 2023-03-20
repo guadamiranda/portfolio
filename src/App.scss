@@ -10,13 +10,13 @@
 .aboutMe-section{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: var(--black)
 }
 
 .skill-section{
     width: 100%;
     height: 100vh;
-    background-image: url(./Assets/night2.jpg);
+    background-image: url(./Assets/WallpaperDog-20463686.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -32,13 +32,35 @@
 .projects-section{
     width: 100%;
     height: 100vh;
-    background-color: brown;
+    background-color: var(--lightBlack)
 }
 
 .contact-section{
     width: 100%;
-    height: 100vh;
-    background-color:cornflowerblue;
+    height: 60vh;
+    background-color: var(--black);
+
+    &__body{
+        display: flex;
+        width: 100%;
+        height: calc(100% - 115px);
+        flex-direction: column;
+    }
+
+    &__body-footer{
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+    }
+
+    &__body-center{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 80%;
+    }
 }
 
 .title-div{

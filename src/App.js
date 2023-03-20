@@ -4,6 +4,9 @@ import { Title } from './Components/Title/Title';
 import { Presentation } from './Components/Presentation/Presentation';
 import { SkillsCard } from './Components/SkillsCard/SkillsCard';
 import { useRef } from 'react';
+import { Contact } from './Components/Contact/Contact';
+import { Footer } from './Components/Footer/Footer';
+import { ImageBottom } from './Components/ImageBottom/ImageBottom';
 
 export const App = () => {
   const homeRef = useRef(null)
@@ -44,7 +47,13 @@ export const App = () => {
 
         <div ref={contactRef} className='contact-section'>
           <div className='title-div'><Title title={<span><b>C</b>ONTACT</span>}/></div>
+          <div className='contact-section__body'>
+            <div className='contact-section__body-center'><Contact/></div>
+            <div className='contact-section__body-footer'><ImageBottom/></div>
+          </div>
         </div>
+
+        <Footer/>
       </section>
 
       <footer>

@@ -1,0 +1,21 @@
+@import '../Styles/colors.scss';
+
+.contact{
+    font-size: 19px;
+
+    &__icon-contact{
+        color: var(--pinky);
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+    
+    span, a{
+        margin-left: 15px;
+        color: var(--white);
+    }
+    
+}
+
