@@ -9,8 +9,15 @@
 
 .aboutMe-section{
     width: 100%;
-    height: 100vh;
-    background-color: black;
+    background-color: var(--black);
+    
+
+    &__body{
+        display: flex;
+        width: 100%;
+        height: calc(100% - 115px);
+        align-items: center;
+    }
 }
 
 .skill-section{
@@ -18,6 +25,7 @@
     height: 100vh;
     background-image: url(./Assets/night3.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 
     &__center{
@@ -31,14 +39,46 @@
 
 .projects-section{
     width: 100%;
-    height: 100vh;
-    background-color: brown;
+    background-color: var(--lightBlack);
+
+    &__body{
+        display: flex;
+        width: 100%;
+        height: calc(100% - 115px);
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 50px;
+    }
 }
 
 .contact-section{
     width: 100%;
-    height: 100vh;
-    background-color:cornflowerblue;
+    height: 40vh;
+    background-color: var(--black);
+
+    &__body{
+        display: flex;
+        width: 100%;
+        height: calc(100% - 115px);
+        flex-direction: column;
+    }
+
+    &__body-footer{
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+    }
+
+    &__body-center{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 80%;
+        margin-top: 10px;
+    }
 }
 
 .title-div{
