@@ -31,13 +31,21 @@
 
 .projects-section{
     width: 100%;
-    height: 100vh;
-    background-color: var(--lightBlack)
+    background-color: var(--lightBlack);
+
+    &__body{
+        display: flex;
+        width: 100%;
+        height: calc(100% - 115px);
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 
 .contact-section{
     width: 100%;
-    height: 60vh;
+    height: 40vh;
     background-color: var(--black);
 
     &__body{
@@ -60,6 +68,7 @@
         align-items: flex-end;
         justify-content: center;
         height: 80%;
+        margin-top: 10px;
     }
 }
 

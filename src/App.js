@@ -7,6 +7,7 @@ import { useRef } from 'react';
 import { Contact } from './Components/Contact/Contact';
 import { Footer } from './Components/Footer/Footer';
 import { ImageBottom } from './Components/ImageBottom/ImageBottom';
+import { Card } from './Components/Card/Card';
 
 export const App = () => {
   const homeRef = useRef(null)
@@ -43,6 +44,15 @@ export const App = () => {
 
         <div ref={projectsRef} className='projects-section'>
           <div className='title-div'><Title title={<span><b>P</b>ROJECTS</span>}/></div>
+          <div className='projects-section__body'>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+
+          </div>
         </div>
 
         <div ref={contactRef} className='contact-section'>
