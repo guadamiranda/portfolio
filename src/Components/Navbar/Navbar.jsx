@@ -35,7 +35,7 @@ export const Navbar = (props) => {
                     <div onClick={() => scroll('projects')}><span>P</span>rojects</div>
                     <div onClick={() => scroll('contact')}><span>C</span>ontact</div> 
                 </div>
-                <div id='navbar_right-content' className='navbar__right-content'><FaFacebookSquare className='facebook-icon'/><FaLinkedin className='linkedin-icon'/><FaGithubSquare className='facebook-icon'/></div>
+                <div id='navbar_right-content' className='navbar__right-content'><a href='https://www.facebook.com/guadyrukia.miranda/' target="_blank" rel="noreferrer"><FaFacebookSquare className='facebook-icon'/></a><a href='https://www.linkedin.com/in/guadalupe-miranda-7b3599267/' target="_blank" rel="noreferrer"><FaLinkedin className='linkedin-icon'/></a><a href='https://github.com/guadamiranda' target="_blank" rel="noreferrer"><FaGithubSquare className='facebook-icon'/></a></div>
         </div>
     )
 }

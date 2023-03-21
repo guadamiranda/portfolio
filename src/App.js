@@ -9,6 +9,8 @@ import { Footer } from './Components/Footer/Footer';
 import { ImageBottom } from './Components/ImageBottom/ImageBottom';
 import { Card } from './Components/Card/Card';
 import { AboutMe } from './Components/AboutMe/AboutMe';
+import splitit from '../src/Assets/splitit.png'; 
+import artesis from '../src/Assets/artesis.PNG';
 
 export const App = () => {
   const homeRef = useRef(null)
@@ -17,7 +19,8 @@ export const App = () => {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  const projects = [{title:<span><b>P</b>roject</span>, description:'Is a project', url:'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}]
+  const projects = [{title:<span><b>S</b>plitIt</span>, description:'Expenses division App', url:'#', img:splitit},
+                    {title:<span><b>A</b>rtesis</span>, description:'Digital art e-commerce App', url:'#', img:artesis}]
 
   return (
     <div className="App">
@@ -51,7 +54,7 @@ export const App = () => {
         <div ref={projectsRef} className='projects-section'>
           <div className='title-div'><Title title={<span><b>P</b>ROJECTS</span>}/></div>
           <div className='projects-section__body'>
-            {projects.map((project) => <Card name={project.title} description={project.description} url={project.url}/> )}
+            {projects.map((project) => <Card name={project.title} description={project.description} url={project.url} img={project.img}/> )}
           </div>
         </div>
 

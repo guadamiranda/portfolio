@@ -2,13 +2,20 @@
 .card{
     width: 400px;
     height: 200px;
-    background-image: url(../Assets/WallpaperDog-20463686.jpg);
     margin: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     color: var(--white);
     text-decoration: none;
     
+
+    &__img{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+
+    }
 
     &__opacity{
         background: rgb(255,255,255);
