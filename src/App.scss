@@ -1,0 +1,108 @@
+
+.home-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Assets/sakura2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutMe-section{
+    width: 100%;
+    background-color: var(--black);
+    
+
+    &__body{
+        display: flex;
+        width: 100%;
+        height: calc(100% - 115px);
+        align-items: center;
+    }
+}
+
+.skill-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Assets/night3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &__center{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.projects-section{
+    width: 100%;
+    background-color: var(--lightBlack);
+
+    &__body{
+        display: flex;
+        width: 100%;
+        height: calc(100% - 115px);
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+}
+
+.contact-section{
+    width: 100%;
+    height: 40vh;
+    background-color: var(--black);
+
+    &__body{
+        display: flex;
+        width: 100%;
+        height: calc(100% - 115px);
+        flex-direction: column;
+    }
+
+    &__body-footer{
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+    }
+
+    &__body-center{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 80%;
+        margin-top: 10px;
+    }
+}
+
+.title-div{
+    display: flex;
+    justify-content: center;
+
+    b {
+        color: var(--pinky)
+    }
+}
+
+.opacity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(356deg, rgba(46, 46, 46, 0.8) 0%, rgba(247, 143, 163,0.5) 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.opacityNoCenter{
+    background: rgb(255,255,255);
+    background: linear-gradient(356deg, rgba(46, 46, 46, 0.8) 0%, rgba(247, 143, 163,0.5) 100%);
+    width: 100%;
+    height: 100vh;
+}

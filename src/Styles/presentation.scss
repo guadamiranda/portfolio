@@ -1,0 +1,45 @@
+@import '../Styles/colors.scss';
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    b {
+        position: relative;
+        color: var(--pinky);
+    }
+
+    b:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--pinky);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    b:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    &__name{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    &__welcome{
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+
+    &__etc{
+        font-size: 30px;
+    }
+}

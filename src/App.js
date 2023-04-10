@@ -1,61 +1,77 @@
-import './Styles/app.css'
-
-import { CiCircleInfo, CiFlag1 } from 'react-icons/ci'
-import { FaBirthdayCake, FaUniversity } from 'react-icons/fa'
-import { Navbar } from './Components/Navbar/navbar';
-import { Card } from './Components/Card/card';
-import { SkillCard } from './Components/SkillCard/SkillCard';
-import { TitleSection } from './Components/TitleSection/TitleSection';
+import './App.scss';
+import { Navbar } from './Components/Navbar/Navbar';
+import { Title } from './Components/Title/Title';
+import { Presentation } from './Components/Presentation/Presentation';
+import { SkillsCard } from './Components/SkillsCard/SkillsCard';
 import { useRef } from 'react';
+import { Contact } from './Components/Contact/Contact';
+import { Footer } from './Components/Footer/Footer';
+import { ImageBottom } from './Components/ImageBottom/ImageBottom';
+import { Card } from './Components/Card/Card';
+import { AboutMe } from './Components/AboutMe/AboutMe';
+import splitit from '../src/Assets/splitit.png'; 
+import artesis from '../src/Assets/artesis.PNG';
 
 export const App = () => {
-  const refHome = useRef(null)
-  const refSkills = useRef(null);
-  const refProjects = useRef(null);
-  const refContact = useRef(null);
+  const homeRef = useRef(null)
+  const aboutMeRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
-  const menuRight = [{opName: "Home", ref: {refHome}}, {opName:"Skills", ref: {refSkills}}, {opName:"Projects", ref: {refProjects}}, {opName:"Contact", ref: {refContact}}];
-  const menuName = "Guadalupe Miranda";
-  const cardInformation = [{cardTitle: "About Me", description: ["Hi! I'm a software developer interested in the world of Front-end. In this page I'm going to publish all the project that I have been doing, all made with love ❤️"], icon:[<CiCircleInfo/>]},
-                           {cardTitle: "Biography", description: ["September - 19 - 1997", "Universidad Tecnológica Nacional", "Córdoba, Argentina"], icon:[<FaBirthdayCake/>,<FaUniversity/>,<CiFlag1/>]}];
-  
-  const titles = ["My Skills", "Projects", "Contact"];
+  const projects = [{title:<span><b>S</b>plitIt</span>, description:'Expenses division App', url:'#', img:splitit},
+                    {title:<span><b>A</b>rtesis</span>, description:'Digital art e-commerce App', url:'#', img:artesis}]
 
   return (
-    <div className="app">
-
+    <div className="App">
       <header className="App-header">
-        <Navbar menuRight={menuRight} menuName={menuName}/>
+        <Navbar homeRef={homeRef} aboutMeRef={aboutMeRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef}/>
       </header>
 
-      <div className='App-body'>
-
-        <section ref={refHome} id={menuRight[0].opName} className="App-body-home">
-          <div className='cardContainer'>
-            <Card cardInformation={cardInformation[0]}/>
-            <Card cardInformation={cardInformation[1]}/>
+      <section>
+        <div ref={homeRef} className='home-section'>
+          <div className='opacity'>
+            <div className='home-section__presentation'><Presentation/></div>
           </div>
+        </div>
 
-          <div className='imgContainer'>
+        <div ref={aboutMeRef} className='aboutMe-section'>
+          <div className='title-div'><Title title={<span><b>A</b>BOUT <b>M</b>E</span>}/></div>
+          <div className='aboutMe-section__body'>
+            <AboutMe/>
           </div>
-        </section>
+        </div>
 
-        <section ref={refSkills} id={menuRight[1].opName} className="App-body-skills">
-          <span><TitleSection titles={titles[0]}/></span>
-          <br/>
-          <span><SkillCard/></span>
-        </section>
+        <div ref={skillsRef} className='skill-section'>
+          <div className='opacityNoCenter'>
+            <div className='title-div'><Title title={<span><b>S</b>KILLS</span>}/></div>
+            <div className='skill-section__center'>
+              <SkillsCard/>
+            </div>
+          </div>  
+        </div>
 
-        <section ref={refProjects} id={menuRight[2].opName} className="App-body-projects">
-          <span><TitleSection titles={titles[1]}/></span>
-        </section>
+        <div ref={projectsRef} className='projects-section'>
+          <div className='title-div'><Title title={<span><b>P</b>ROJECTS</span>}/></div>
+          <div className='projects-section__body'>
+            {projects.map((project) => <Card name={project.title} description={project.description} url={project.url} img={project.img}/> )}
+          </div>
+        </div>
 
-        <section ref={refContact} id={menuRight[3].opName} className="App-body-contact">
-          <span><TitleSection titles={titles[2]}/></span>
-        </section>
+        <div ref={contactRef} className='contact-section'>
+          <div className='title-div'><Title title={<span><b>C</b>ONTACT</span>}/></div>
+          <div className='contact-section__body'>
+            <div className='contact-section__body-center'><Contact/></div>
+            <div className='contact-section__body-footer'><ImageBottom/></div>
+          </div>
+        </div>
 
-      </div>
+        <Footer/>
+      </section>
 
+      <footer>
+
+      </footer>
     </div>
   );
 }

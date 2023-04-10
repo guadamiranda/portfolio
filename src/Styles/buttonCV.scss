@@ -1,0 +1,23 @@
+@import '../Styles/colors.scss';
+
+.buttonCV{
+
+    &__button{
+        border-radius: 90px;
+        border: var(--pinky) 3px solid;
+        background-color: transparent;
+        font-size: 20px;
+        padding: 10px;
+        cursor: pointer;
+        color: var(--white);
+        transition: 0.5s;
+        background-color: rgba(255,255,255,0.1);
+        text-decoration: none;
+    }
+
+    &__button:hover{
+        border: var(--white) 3px solid;
+        color: var(--pinky);
+        transition: 0.5s;
+    }
+}
