@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import '../../Styles/card.scss'
 
 export const Card = (prop) => {
