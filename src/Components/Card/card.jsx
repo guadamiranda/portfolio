@@ -9,7 +9,6 @@ export const Card = (prop) => {
                     <div className='card__description'>{prop.description}</div>
                 </div>
             </div>
-            
         </a>
     )
 
