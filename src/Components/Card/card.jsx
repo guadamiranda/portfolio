@@ -1,17 +1,17 @@
-import '../../Styles/card.css'
+import { useEffect, useState } from 'react';
+import '../../Styles/card.scss'
 
-export const Card = (props) => {
+export const Card = (prop) => {
     return(
-        <div className='card'>
-            <div className='cardHeader'>
-                <span>{props.cardInformation.cardTitle}</span>
+        <a href={prop.url} target="_blank" rel="noopener noreferrer" className='card' >
+            <div className='card__img' style={{backgroundImage: `url(${prop.img})`}}>
+                <div className='card__opacity'>
+                    <div className='card__title'>{prop.name}</div>
+                    <div className='card__description'>{prop.description}</div>
+                </div>
             </div>
-            <hr/>
-            <div className='bodyHeader'>
-                <div><span>{props.cardInformation.icon[0]}</span><div>{props.cardInformation.description[0]}</div></div>
-                <div><span>{props.cardInformation.icon[1]}</span><div>{props.cardInformation.description[1]}</div></div>
-                <div><span>{props.cardInformation.icon[2]}</span><div>{props.cardInformation.description[2]}</div></div>
-            </div>
-        </div>
+            
+        </a>
     )
+
 }
