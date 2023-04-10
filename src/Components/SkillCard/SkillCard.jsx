@@ -7,8 +7,7 @@ import logoReact from '../../Assets/react.png'
 import logoNode from '../../Assets/node.png'
 import logoMongodb from '../../Assets/mongodb.png'
 
-import { AiFillCaretRight, AiFillCaretLeft } from 'react-icons/ai';
-import { VscCircleFilled, VscCircleLargeFilled } from 'react-icons/vsc';
+import { VscCircleFilled } from 'react-icons/vsc';
 
 export const SkillCard = () => {
     const skills = [{name: "HTML", level: 8, img: logoHTML, color: "#F87D63"}, 
