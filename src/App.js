@@ -24,6 +24,7 @@ export const App = () => {
 
   return (
     <div className="App">
+
       <header className="App-header">
         <Navbar homeRef={homeRef} aboutMeRef={aboutMeRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef}/>
       </header>
@@ -51,6 +52,22 @@ export const App = () => {
           </div>  
         </div>
 
+      </section>
+      
+
+      
+    </div>
+  );
+}
+
+/*<section>
+
+        
+
+        
+
+        
+
         <div ref={projectsRef} className='projects-section'>
           <div className='title-div'><Title title={<span><b>P</b>ROJECTS</span>}/></div>
           <div className='projects-section__body'>
@@ -71,7 +88,4 @@ export const App = () => {
 
       <footer>
 
-      </footer>
-    </div>
-  );
-}
+      </footer>*/

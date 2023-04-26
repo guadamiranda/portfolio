@@ -43,3 +43,22 @@
         font-size: 30px;
     }
 }
+
+@media(max-width: 700px) {
+    .presentation{ 
+        &__name{
+            font-size: 25px;
+            text-align: center;
+        }
+    
+        &__welcome{
+            font-size: 20px;
+        }
+    
+        &__etc{
+            margin-top: 20px;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}

@@ -1,4 +1,10 @@
 
+.App {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
 .home-section{
     width: 100%;
     height: 100vh;
@@ -9,6 +15,7 @@
 
 .aboutMe-section{
     width: 100%;
+    min-height: 100vh;
     background-color: var(--black);
     
 
@@ -22,14 +29,13 @@
 
 .skill-section{
     width: 100%;
-    height: 100vh;
     background-image: url(./Assets/night3.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 
     &__center{
-        height: 100%;
+        margin-top: 100px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -105,4 +111,45 @@
     background: linear-gradient(356deg, rgba(46, 46, 46, 0.8) 0%, rgba(247, 143, 163,0.5) 100%);
     width: 100%;
     height: 100vh;
+}
+
+@media(max-width: 700px) {
+    .App {
+        background-color: rgb(231, 112, 148);
+        width: 100vw;
+
+        &__home-section{
+            width: 100vw;
+            background-image: url(./Assets/sakura2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        &__aboutMe-section{
+            width: 100vw;
+            background-color: var(--black);
+            
+            &__body{
+                display: flex;
+                width: 100%;
+                min-height: 63vh;
+                align-items: center;
+            }
+        }
+
+        &__skill-section{
+            width: 100%;
+            background-image: url(./Assets/night3.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        
+            &__center{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 }

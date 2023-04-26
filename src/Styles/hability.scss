@@ -48,3 +48,55 @@
     padding: 10px;
     width: 0%;
 }
+
+@media(max-width: 700px) {
+    .hability{
+        font-size: 25px;
+        margin-bottom: 20px;
+    
+        &__container-name-icon-percentage{
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        &__container-name-icon{
+            text-align: center;
+            font-size: 20px;
+        }
+    
+        &__nameHabilities{
+            margin-left: 20px;
+            color: var(--white);
+            font-size: 20px;
+            letter-spacing: 10px;
+    
+        }
+    
+        &__iconHabilities{
+            color: var(--pinky);
+        }
+    
+        &__container-percentage{
+    
+            span{
+                color: var(--white)
+            }
+        }
+    
+        &__container-percentage-bar{
+            background-color: var(--whiteOpacity);
+            width: 100%;
+            height: 20px;
+            border-radius: 8px;
+        }
+    
+    }
+    
+    .porcentage-bar-pink{
+        background-color: var(--pinky);
+        border-radius: 8px;
+        padding: 10px;
+        width: 0%;
+    }
+    
+}

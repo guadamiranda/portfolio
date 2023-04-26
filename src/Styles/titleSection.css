@@ -17,3 +17,24 @@
     color: var(--ligthRed);
     font-size: 30px;
 }
+
+@media(max-width: 700px) {
+    .titleSection{
+        background-color: var(--whiteOpacity);
+        height: 10vh;
+        width: 60vw;
+        border-bottom: 3px solid var(--ligthRed);
+        box-shadow: 0px 7px 21px -8px rgb(97, 97, 97);
+        -moz-box-shadow: 0px 7px 21px -8px rgb(97, 97, 97);
+        -webkit-box-shadow: 0px 7px 21px -8px rgb(82, 82, 82);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .titleSection span{
+        color: var(--ligthRed);
+        font-size: 30px;
+    }
+}

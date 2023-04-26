@@ -3,7 +3,8 @@
 .aboutMe{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 180px;
 
     &__left-content{
         display: flex;
@@ -13,15 +14,14 @@
 
     &__photo{
         display: flex;
-        background-color: aqua;
-        width: 550px;
-        height: 550px;
+        width: 350px;
+        height: 350px;
     }
 
     &__img{
         background-image: url(../Assets/night.jpg);
-        width: 550px;
-        height: 100px;
+        width: 350px;
+        height: 30px;
         border-left: 10px solid var(--pinky);
     }
 
@@ -64,4 +64,79 @@
         object-position: top;
         border-left: 10px solid var(--pinky);
     }
+}
+
+@media(max-width: 700px) {
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    
+        &__left-content{
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+            align-items: center;
+            margin-top: 15px;
+            justify-content: center;
+        }
+    
+        &__photo{
+            width: 250px;
+            height: 250px;
+            padding: 0px;
+            margin-right: 60px;
+        }
+    
+        &__img{
+            background-image: url(../Assets/night.jpg);
+            width: 60px;
+            height: 250px;
+            padding: 0px;
+            border-left: none;
+        }
+    
+        &__right-content{
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            width: 90vw;
+            margin-top: 20px;
+            margin-left: 22px;
+        }
+    
+        &__description{
+            font-size: 15px;
+            color: var(--white);
+            border-top: 1px white solid;
+        }
+    
+        &__name{
+            color: var(--white);
+            font-size: 25px;
+    
+            b{
+                color: var(--pinky);
+            }
+        }
+    
+        &__title{
+            display: flex;
+            color: var(--white);
+            font-size: 15px;
+            align-items: center;
+    
+            span{
+                margin-left: 10px;
+            }
+        }
+    
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-left: 10px solid var(--pinky);
+        }
+    }
+    
 }

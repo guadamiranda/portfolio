@@ -13,3 +13,19 @@
         padding: 0px;
     }
 }
+
+@media(max-width: 700px) {
+    .title{
+        display: flex;
+        border-bottom: 3px solid var(--pinky);
+        padding-left: 14px;
+        padding-top: 100px;
+        color: var(--white);
+    
+        &__sentence{
+            font-size: 35px;
+            letter-spacing: 20px;
+            padding: 0px;
+        }
+    }
+}
