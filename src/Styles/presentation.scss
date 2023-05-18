@@ -37,12 +37,18 @@
     &__welcome{
         font-size: 25px;
         letter-spacing: 10px;
+
+        span {
+            overflow: hidden; 
+            white-space: nowrap;
+        }
     }
 
     &__etc{
         font-size: 30px;
     }
 }
+
 
 @media(max-width: 700px) {
     .presentation{ 

@@ -19,8 +19,8 @@ export const App = () => {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  const projects = [{title:<span><b>S</b>plitIt</span>, description:'Expenses division App', url:'#', img:splitit},
-                    {title:<span><b>A</b>rtesis</span>, description:'Digital art e-commerce App', url:'#', img:artesis}]
+  const projects = [{title:<span><b>S</b>plitIt</span>, description:'Expenses division App', url:'', img:splitit},
+                    {title:<span><b>A</b>rtesis</span>, description:'Digital art e-commerce App', url:'', img:artesis}]
 
   return (
     <div className="App">
@@ -52,22 +52,6 @@ export const App = () => {
           </div>  
         </div>
 
-      </section>
-      
-
-      
-    </div>
-  );
-}
-
-/*<section>
-
-        
-
-        
-
-        
-
         <div ref={projectsRef} className='projects-section'>
           <div className='title-div'><Title title={<span><b>P</b>ROJECTS</span>}/></div>
           <div className='projects-section__body'>
@@ -79,13 +63,15 @@ export const App = () => {
           <div className='title-div'><Title title={<span><b>C</b>ONTACT</span>}/></div>
           <div className='contact-section__body'>
             <div className='contact-section__body-center'><Contact/></div>
-            <div className='contact-section__body-footer'><ImageBottom/></div>
+            
           </div>
+          <div className='contact-section__body-footer'><ImageBottom/></div>
         </div>
 
         <Footer/>
+
+        
       </section>
-
-      <footer>
-
-      </footer>*/
+    </div>
+  );
+}
